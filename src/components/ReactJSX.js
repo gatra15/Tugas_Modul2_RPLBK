@@ -1,17 +1,20 @@
 import React from 'react';
+import './Card.css';
 
 //menggunakan JSX
-const ReactJSX = () => {
+const ReactJSX = (props) => {
     return (
-        <div>
-            <h1>Tugas JSX</h1>
-            <pre>Cari Nama Anggota Aegis Yuk</pre>
-            <section id="result">
-                <h3 id="search-not-found" style="display: none;">Data Tidak Ditemukan</h3>
-                <div id="search-result">
-                </div>
-            </section>
+        <div className="card">
+        <img src="avatar.png" alt="Avatar" />
+            <div className="container">
+                <h4>{props.dataAegis.nama_panggilan}</h4>
+                <h4>{props.dataAegis.nama_lengkap}</h4>
+                <h4>{props.dataAegis.nim}</h4>
+                <h4>{props.dataAegis.email}</h4>
+                <h4>{props.dataAegis.hobi}</h4>
+            </div>
         </div>
+        
     );
 }
 

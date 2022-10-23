@@ -10,4 +10,5 @@ padding:7px 10px;
 background:white;
 ${(props) => props.border && css`
 border-color:${(props) =>props.border}; `}
-color:black; `;
+color:black;
+margin-bottom:30px; `;
